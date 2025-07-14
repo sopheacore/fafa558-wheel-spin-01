@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucky $168</title>
+  <link rel="stylesheet" href="styles.css" />
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1256028322826999');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1256028322826999&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+
+<body>
+  <div class="wheel-container">
+    <img class="wheel-frame" src="./assets/BORDER.webp" alt="frame" loading="lazy" />
+    
+    <div class="pointer">
+      <img src="./assets/TEXT SPIN.webp" alt="pointer" loading="lazy" />
+    </div>
+
+    <div class="wheel" id="wheel">
+      <img src="./assets/wheel.webp" alt="wheel" loading="lazy" />
+    </div>
+
+    <img src="./assets/spin_button_main.gif" class="spin-button" onclick="spinWheel()" alt="Spin" loading="lazy" />
+  </div>
+  
+
+  <!-- Modals -->
+  <div class="modal" id="winModal">
+    <div class="modal-content">
+      <img src="./assets/10$.webp" alt="Prize" loading="lazy" />
+      <a href="https://t.me/FAFA558KH" class="trackable-link" target="_blank">
+        <img src="./assets/claim_button.gif" alt="Claim" loading="lazy" />
+      </a>
+    </div>
+  </div>
+
+  <div class="modal" id="retryModal">
+    <div class="modal-content">
+      <img src="./assets/Group 3.webp" alt="Try Again" loading="lazy" />
+      <img src="./assets/try_again_button.gif" class="try_again_button" onclick="retrySpin()" alt="Retry" loading="lazy" />
+    </div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="bgMusic" src="./assets/background.mp3" loop></audio>
+  <audio id="clickSound" src="./assets/click.mp3"></audio>
+  <audio id="spinSound" src="./assets/spin.mp3"></audio>
+  <audio id="modalSound" src="./assets/modal.mp3"></audio>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="application.js" defer></script>
+</body>
+</html>
